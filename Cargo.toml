@@ -1,0 +1,16 @@
+[package]
+name = "jinji"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+anyhow = { version = "1", features = ["backtrace"] }
+base64 = "0.21"
+clap = { version = "4", features = ["derive", "env"] }
+regex = "1"
+reqwest = { version = "0.11", features = ["blocking"] }
+serde_json = "1"
+serde_yaml = "0.9"
+tera = "1"
