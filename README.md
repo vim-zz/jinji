@@ -6,7 +6,7 @@ Jinji is a Rust-based tool for dynamic content generation, utilizing Tera templa
 
 ## Features
 
-- Tera template rendering: Process and render templates dynamically.
+- Tera template rendering: Process and render examples dynamically.
 - Header extraction and rendering: Supports cyclic rendering of headers in source files.
 - Markdown to HTML conversion: Converts markdown text to HTML format.
 - Custom Tera filters and functions: Includes implementations like the `Banana` filter and `HttpGet` function.
@@ -15,18 +15,9 @@ Jinji is a Rust-based tool for dynamic content generation, utilizing Tera templa
 
 ### Installation
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/<Project Name>.git
-   ```
-2. Navigate to the project directory:
-   ```bash
-   cd <Project Name>
-   ```
-3. Build the project:
-   ```bash
-   cargo build
-   ```
+```
+cargo install jinji
+```` 
 
 ### Usage
 
@@ -38,9 +29,11 @@ cargo run -- --source <path_to_your_source_file>
 
 #### Example
 
-cargo run -- --source templates/concept.md
+`jinji --source examples/concept.md`
+OR
+`cat examples/concept.md | jinji`
 
-Source: 
+Source at: 
 ```yaml+jinja
 ---
 vars:
